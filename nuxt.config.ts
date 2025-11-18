@@ -1,0 +1,30 @@
+// nuxt.config.js
+export default defineNuxtConfig({
+  modules: ['@nuxt/content'],
+
+  app: {
+    head: {
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Catálogo de Pinturas' }
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' },
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css' },
+        { rel: 'stylesheet', href: '/css/museos.css' },
+        { rel: 'stylesheet', href: '/css/artistas.css' },
+        { rel: 'stylesheet', href: '/css/pinturas.css' }
+      ]
+    }
+  },
+
+  nitro: {
+    preset: 'static',
+    prerender: { crawlLinks: true }
+  },
+
+  routeRules: {
+    '/**': { prerender: true }
+  }
+})

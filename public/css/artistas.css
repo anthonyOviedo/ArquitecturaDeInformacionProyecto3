@@ -1,0 +1,105 @@
+.artistas-container {
+  margin-bottom: 2.5rem;
+}
+
+.artistas-container .page-title {
+  margin-top: 1rem;
+}
+
+.artistas-container .page-subtitle {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.artistas-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.artistas-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.artistas-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.artistas-card-link {
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.artistas-card-title {
+  margin-bottom: 0.75rem;
+}
+
+.artistas-card-detail {
+  margin: 0.35rem 0;
+  color: #555;
+}
+
+.artistas-card-detail strong {
+  color: #333;
+}
+
+.artistas-card-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0070f3;
+  font-weight: 600;
+}
+
+.artistas-card-link:hover .artistas-card-cta {
+  text-decoration: underline;
+}
+
+.artistas-empty {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.artista-detail {
+  margin: 2rem auto 3rem;
+}
+
+.artista-detail__article {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
+}
+
+.artista-detail__media {
+  text-align: center;
+}
+
+.artista-detail__image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.artista-detail__title {
+  margin-bottom: 0.5rem;
+}
+
+.artista-detail__meta {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  color: #444;
+}
+
+.artista-detail__meta li + li {
+  margin-top: 0.35rem;
+}

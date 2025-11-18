@@ -1,0 +1,105 @@
+.museos-container {
+  margin-bottom: 2.5rem;
+}
+
+.museos-container .page-title {
+  margin-top: 1rem;
+}
+
+.museos-container .page-subtitle {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.museos-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.museos-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.museos-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.museos-card-link {
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.museos-card-title {
+  margin-bottom: 0.75rem;
+}
+
+.museos-card-detail {
+  margin: 0.35rem 0;
+  color: #555;
+}
+
+.museos-card-detail strong {
+  color: #333;
+}
+
+.museos-card-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0070f3;
+  font-weight: 600;
+}
+
+.museos-card-link:hover .museos-card-cta {
+  text-decoration: underline;
+}
+
+.museos-empty {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.museo-detail {
+  margin: 2rem auto 3rem;
+}
+
+.museo-detail__article {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
+}
+
+.museo-detail__media {
+  text-align: center;
+}
+
+.museo-detail__image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.museo-detail__title {
+  margin-bottom: 0.5rem;
+}
+
+.museo-detail__meta {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  color: #444;
+}
+
+.museo-detail__meta li + li {
+  margin-top: 0.35rem;
+}
