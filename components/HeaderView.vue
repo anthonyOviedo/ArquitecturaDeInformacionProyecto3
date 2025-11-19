@@ -1,11 +1,31 @@
 <template>
-  <div class="row" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
-    <NuxtLink class="three columns button button-primary" to="/">Inicio</NuxtLink>
-    <NuxtLink class="three columns button button-primary" to="/pinturas_index">Pinturas</NuxtLink>
-    <NuxtLink class="three columns button button-primary" to="/artistas_index">Artistas</NuxtLink>
-    <NuxtLink class="three columns button button-primary" to="/museos_index">Museos</NuxtLink>
-    <button class="three columns button button-primary snipcart-checkout" type="button">
+  <nav class="main-nav">
+    <NuxtLink class="nav-item button button-primary" to="/">Inicio</NuxtLink>
+    <NuxtLink class="nav-item button button-primary" to="/pinturas_index">Pinturas</NuxtLink>
+    <NuxtLink class="nav-item button button-primary" to="/artistas_index">Artistas</NuxtLink>
+    <NuxtLink class="nav-item button button-primary" to="/museos_index">Museos</NuxtLink>
+    <button class="nav-item button button-primary snipcart-checkout" type="button">
       Carrito
     </button>
-  </div>
+  </nav>
 </template>
+
+<style scoped>
+.main-nav {
+  margin-top: 15px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.nav-item {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+</style>
